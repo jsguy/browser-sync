@@ -1,3 +1,46 @@
+# Jsguy's version of browser sync
+
+* More events, including touch
+* Works with mouseover/out (hovering)
+* Uses xpath instead of index to find elements - this works much better when you have unpredictable HTML in the page
+
+## Installation
+
+* If you don't already have it, install node stable: https://nodejs.org/en/ 
+* Create a directory that you want to use for browser sync, and go to that directory on the command line
+
+### OSX
+
+```bash
+npm install jsguy/browser-sync
+```
+
+### Windows 
+
+* Install git: https://git-scm.com/download/win
+* Install VS2015 if you don't already have it: https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx (need this for compiling GYP - you could possibly alternatively install Python and a bunch of other things)
+
+```bash
+npm install jsguy/browser-sync --msvs_version=2015
+```
+
+Installation should now be complete.
+
+Note: you cannot easily install forked repositories globally, which is why this is the recommended approach.
+
+## Usage
+
+The main benefit of using this version over the normal branch is as a proxy, for example:
+
+```bash
+node node_modules/browser-sync/bin/browser-sync.js start --proxy localhost
+```
+
+This will open your localhost, in a proxied state - you can then access that URL externally with shared devices.
+
+
+## Original readme contents follow below
+
 <p align="center">
 <a href="https://ci.appveyor.com/project/shakyShane/browser-sync" title="AppVeyor branch">
  <img src="https://img.shields.io/appveyor/ci/shakyshane/browser-sync/master.svg?style=flat-square&label=windows" />
