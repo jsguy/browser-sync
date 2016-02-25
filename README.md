@@ -18,7 +18,7 @@ npm install jsguy/browser-sync
 ### Windows 
 
 * Install git: https://git-scm.com/download/win
-* Install VS2015 if you don't already have it: https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx (need this for compiling GYP - you could possibly alternatively install Python and a bunch of other things)
+* Install VS2015 if you don't already have it: https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx (need this for compiling GYP - you could possibly alternatively install Python and a bunch of other things, but vs2015 seems the easiest way to get this to work on windows. Note: this is a browser sync requirement, and a suggestion in [their documentation](https://www.browsersync.io/docs/#windows-users))
 
 ```bash
 npm install jsguy/browser-sync --msvs_version=2015
